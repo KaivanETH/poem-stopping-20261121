@@ -9,12 +9,12 @@ import { join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
 const POEM = [
-  'The latch lifts. The wind wants in.',
-  'You lower it. Nothing happens —',
-  'and that nothing is the whole estate:',
-  'the fire kept, the wall unmoved,',
-  'the house asleep in its own weight.',
-  "A choice is a door held shut.",
+  'The gate leaned open to the wind.',
+  'You set your palm flat to the latch',
+  'and shut it. No one in the field',
+  'looked up — the cows went back to grass.',
+  'The wind came after with its whole weight;',
+  'your hand was there first, and stayed.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM);
